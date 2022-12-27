@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>uHost</title>
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="packages.css" />
+  </head>
+  <header class="main-header">
+    <div>
+      <a class="main-header__brand" href="index.html"> uHost </a>
+    </div>
+    <nav class="main-nav">
+      <ul class="main-nav__items">
+        <li class="main-nav__item">
+          <a href="packages/index.html">Packages</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="customers/index.html">Customers</a>
+        </li>
+        <li class="main-nav__item main-nav__item--cta">
+          <a href="start-hosting/index.html">Start Hosting</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <main>
+      <section class="packages">
+        <a href="#">
+          <h1>Our PLUS Plan</h1>
+          <h2>The most popular choice of our customers.</h2>
+          <img src="kitten.jpg" alt="inside same folder">
+          <img src="image/kitten.jpg" alt="image folder inside the current folder">
+          <img src="/assets/image/kitten.jpg" alt="root">
+          <img src="../kitten.jpg" alt="one level up">
+          <img src="./kitten.jpg" alt="inside current folder">
+          <p>
+            Benefit from increased storage and faster support to ensure that
+            your mission-critical data and applications are always available!
+          </p>
+        </a>
+      </section>
+      <section class="packages free">
+        <a href="#">
+          <h1>Our FREE Plan</h1>
+          <h2>An extremely solid start into our hosting world.</h2>
+          <p>Get started immediately at zero cost!</p>
+        </a>
+      </section>
+      <div class="clearfix"></div>
+      <section class="packages">
+        <a href="#">
+          <h1>Our PREMIUM Plan</h1>
+          <h2>
+            All your enterprise needs. Instant support, guaranteed uptime.
+          </h2>
+          <p>
+            The best solution for small to large enterprises. Because hosting
+            shouldn't be in the way!
+          </p>
+        </a>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <nav>
+        <ul>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Term of Use</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.6.1.js"
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    $(".btnLocationMapMenu").click(function () {
+      const src = $(this).attr("data-locationMenu");
+      console.log(src);
+      const lineColor = $(".line").attr("data-lineColor");
+      console.log(lineColor);
+      $(".line" + src).toggleClass("active");
+    });
+  </script>
+</html>
